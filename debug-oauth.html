@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square OAuth Debug</title>
+</head>
+<body>
+    <h1>Square OAuth Debug</h1>
+    <p>Click the button below to test the OAuth URL:</p>
+    
+    <button onclick="testOAuth()">Test Square OAuth</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        function testOAuth() {
+            const redirectUri = 'http://localhost:3000/auth/square/callback';
+            const squareOAuthUrl = `https://squareup.com/oauth2/authorize?response_type=code&client_id=sq0idp-ErLtMXcPQspz3r2WSyAu3Q&redirect_uri=${encodeURIComponent(redirectUri)}&scope=CUSTOMERS_WRITE CUSTOMERS_READ PAYMENTS_READ PAYMENTS_WRITE SUBSCRIPTIONS_WRITE SUBSCRIPTIONS_READ ITEMS_READ ORDERS_WRITE INVOICES_WRITE MERCHANT_PROFILE_READ INVOICES_READ PAYMENTS_WRITE_SHARED_ONFILE ITEMS_WRITE ORDERS_READ&session=False`;
+            
+            document.getElementById('output').innerHTML = `
+                <h3>Generated OAuth URL:</h3>
+                <p><a href="${squareOAuthUrl}" target="_blank">${squareOAuthUrl}</a></p>
+                <h3>Redirect URI (encoded):</h3>
+                <p>${redirectUri}</p>
+                <h3>Redirect URI (decoded):</h3>
+                <p>${decodeURIComponent(redirectUri)}</p>
+            `;
+            
+            // Open in new window
+            window.open(squareOAuthUrl, '_blank', 'width=600,height=700,scrollbars=yes,resizable=yes');
+        }
+    </script>
+</body>
+</html>
