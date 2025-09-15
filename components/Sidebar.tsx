@@ -45,8 +45,8 @@ export default function Sidebar() {
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 rounded-lg overflow-hidden">
             <img 
-              src="https://images.ctfassets.net/y2vv62dcl0ut/5lFN96dA38Pp1pVBCdUua9/8067ea4e60ca711e7c0b7539b3bdc04a/square_logo_guideline_ok.png.png.png.png.png.png.png.png.png.png.png.png" 
-              alt="Square Logo" 
+              src="/logo.png" 
+              alt="Logo" 
               className="w-full h-full object-contain"
             />
           </div>

@@ -126,7 +126,7 @@ export default function SquareCallbackPage() {
         className="bg-white rounded-2xl shadow-2xl p-8 max-w-lg w-full"
       >
         <div className="text-center">
-          {/* Square Logo */}
+          {/* Logo */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -135,8 +135,8 @@ export default function SquareCallbackPage() {
           >
             <div className="w-16 h-16 mx-auto rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.ctfassets.net/y2vv62dcl0ut/5lFN96dA38Pp1pVBCdUua9/8067ea4e60ca711e7c0b7539b3bdc04a/square_logo_guideline_ok.png.png.png.png.png.png.png.png.png.png.png.png" 
-                alt="Square Logo" 
+                src="/logo.png" 
+                alt="Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
