@@ -157,14 +157,14 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
         <div className="flex gap-2 mt-4 sm:mt-0">
           <button
             onClick={() => setShowCreatePlan(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors"
           >
             <Plus className="w-4 h-4" />
             Create Plan
           </button>
           <button
             onClick={() => setShowCreateVariation(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-success text-white rounded-lg hover:bg-success/90 transition-colors"
           >
             <Plus className="w-4 h-4" />
             Create Variation
@@ -174,9 +174,9 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
 
       {/* Error Message */}
       {subscriptionError && (
-        <div className="flex items-center gap-2 p-4 bg-red-50 border border-red-200 rounded-lg">
-          <AlertCircle className="w-5 h-5 text-red-600" />
-          <span className="text-red-800">{subscriptionError}</span>
+        <div className="flex items-center gap-2 p-4 bg-error/10 border border-error/20 rounded-lg">
+          <AlertCircle className="w-5 h-5 text-error" />
+          <span className="text-error">{subscriptionError}</span>
         </div>
       )}
 
@@ -251,7 +251,7 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
                   
                   <div className="space-y-3">
                     {planVariations.map((variation: PlanVariation) => (
-                      <div key={variation.id} className="bg-gray-50 rounded-lg p-3 border-l-4 border-blue-500">
+                      <div key={variation.id} className="bg-gray-50 rounded-lg p-3 border-l-4 border-primary">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-2">
@@ -338,7 +338,7 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
                 <button
                   type="submit"
                   disabled={isCreatingPlan}
-                  className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isCreatingPlan ? 'Creating...' : 'Create Plan'}
                 </button>
@@ -515,7 +515,7 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
                 <button
                   type="submit"
                   disabled={isCreatingVariation}
-                  className="w-full px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-2 bg-success text-white rounded-lg hover:bg-success/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isCreatingVariation ? 'Creating...' : 'Create Variation'}
                 </button>

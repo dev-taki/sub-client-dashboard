@@ -39,9 +39,9 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="w-64 bg-white border-r border-gray-200 h-screen flex flex-col">
+    <div className="w-64 bg-background border-r border-border h-screen flex flex-col">
       {/* Logo */}
-      <div className="p-6 border-b border-gray-200">
+      <div className="p-6 border-b border-border">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 rounded-lg overflow-hidden">
             <img 
@@ -50,7 +50,7 @@ export default function Sidebar() {
               className="w-full h-full object-contain"
             />
           </div>
-          <h1 className="text-xl font-bold text-gray-900">Subport</h1>
+          <h1 className="text-xl font-bold text-text">Subport</h1>
         </div>
       </div>
 
@@ -63,11 +63,11 @@ export default function Sidebar() {
                 onClick={() => router.push(item.path)}
                 className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${
                   pathname === item.path
-                    ? 'bg-blue-50 text-blue-600 border-l-4 border-blue-600'
+                    ? 'bg-primary-light text-primary border-l-4 border-primary'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >
-                <item.icon className={`w-5 h-5 ${pathname === item.path ? 'text-blue-600' : 'text-gray-500'}`} />
+                <item.icon className={`w-5 h-5 ${pathname === item.path ? 'text-primary' : 'text-gray-500'}`} />
                 <span className="font-medium">{item.name}</span>
               </button>
             </li>
@@ -76,13 +76,13 @@ export default function Sidebar() {
       </nav>
 
       {/* User Info & Logout */}
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-4 border-t border-border">
         <div className="flex items-center space-x-3 mb-4">
           <div className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
             <User className="w-6 h-6 text-gray-600" />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-gray-900 truncate">
+            <p className="text-sm font-medium text-text truncate">
               {user?.name || 'User'}
             </p>
             <p className="text-xs text-gray-500 truncate">
