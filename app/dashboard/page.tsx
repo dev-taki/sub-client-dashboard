@@ -64,7 +64,7 @@ export default function DashboardPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
                     <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                      Welcome to Order Hoarder, {user.name?.split(' ')[0]}! 🎉
+                      Welcome to Subport, {user.name?.split(' ')[0]}! 🎉
                     </h2>
                     
                     {business && business.merchant_id ? (

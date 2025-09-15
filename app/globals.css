@@ -3,7 +3,7 @@
 :root {
   /* Your 3 theme colors only */
   --color-primary: #1ccd63;      /* Button color */
-  --color-text: #000000;         /* Text color - black */
+  --color-text: #374151;         /* Text color - dark gray */
   --color-background: #ffffff;  /* Background color - white */
   
   /* Legacy variables for compatibility */
@@ -18,7 +18,7 @@
 body {
   background: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
 }
 
 /* Simple utility classes for your 3 colors */
