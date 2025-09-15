@@ -10,8 +10,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Vendocker Dashboard",
-  description: "Authentication and dashboard for Vendocker",
+  title: "Subport Dashboard",
+  description: "Authentication and dashboard for Subport",
 };
 
 export default function RootLayout({
