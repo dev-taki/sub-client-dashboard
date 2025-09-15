@@ -91,7 +91,7 @@ export default function DashboardPage() {
                         <div className="flex items-center space-x-4">
                           <button
                             onClick={() => {
-                              const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-kMtm2Q79PLnqxFMcwlTmcg&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
+                              const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-8kztSVgh4k2MrA47TAO_XA&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
                               window.open(squareOAuthUrl, '_blank', 'width=600,height=700,scrollbars=yes,resizable=yes');
                             }}
                             className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
@@ -118,7 +118,7 @@ export default function DashboardPage() {
                     ) : (
                       <button
                         onClick={() => {
-                          const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-kMtm2Q79PLnqxFMcwlTmcg&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
+                          const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-8kztSVgh4k2MrA47TAO_XA&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
                           window.open(squareOAuthUrl, '_blank', 'width=600,height=700,scrollbars=yes,resizable=yes');
                         }}
                         className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"

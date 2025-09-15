@@ -26,7 +26,7 @@ export default function SettingsPage() {
 
   const handleSquareConnect = () => {
     // Use the exact URL format you provided (without redirect_uri)
-    const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-kMtm2Q79PLnqxFMcwlTmcg&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
+    const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-8kztSVgh4k2MrA47TAO_XA&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
     
     // Open Square OAuth in new window
     window.open(squareOAuthUrl, '_blank', 'width=600,height=700,scrollbars=yes,resizable=yes');
