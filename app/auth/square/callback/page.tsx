@@ -3,6 +3,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useAppDispatch } from '@/redux/hooks/hooks';
+import { getBusiness } from '@/redux/features/auth/authSlice';
 
 interface OAuthData {
   code?: string;
@@ -25,6 +27,7 @@ interface OAuthData {
 export default function SquareCallbackPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const dispatch = useAppDispatch();
   const [status, setStatus] = useState<'loading' | 'success' | 'error'>('loading');
   const [message, setMessage] = useState('');
   const hasProcessed = useRef(false);
@@ -73,6 +76,9 @@ export default function SquareCallbackPage() {
       
       // Send authorization code to webhook for server-side token exchange
       sendOAuthDataToWebhook(oauthData);
+      
+      // Refresh business data to get updated Square connection status
+      dispatch(getBusiness());
       
       setStatus('success');
       setMessage('Square account connected successfully! Authorization code sent to backend.');

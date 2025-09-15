@@ -63,7 +63,7 @@ export default function Sidebar() {
                 onClick={() => router.push(item.path)}
                 className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${
                   pathname === item.path
-                    ? 'bg-green-50 text-primary border-l-4 border-primary'
+                    ? 'bg-green-50 text-primary'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >
