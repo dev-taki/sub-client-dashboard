@@ -38,43 +38,7 @@
   --foreground: var(--color-text);
 }
 
-@theme inline {
-  /* Primary colors */
-  --color-primary: var(--color-primary);
-  --color-primary-hover: var(--color-primary-hover);
-  --color-primary-light: var(--color-primary-light);
-  --color-primary-dark: var(--color-primary-dark);
-  
-  /* Text and background */
-  --color-text: var(--color-text);
-  --color-background: var(--color-background);
-  
-  /* Gray scale */
-  --color-gray-50: var(--color-gray-50);
-  --color-gray-100: var(--color-gray-100);
-  --color-gray-200: var(--color-gray-200);
-  --color-gray-300: var(--color-gray-300);
-  --color-gray-400: var(--color-gray-400);
-  --color-gray-500: var(--color-gray-500);
-  --color-gray-600: var(--color-gray-600);
-  --color-gray-700: var(--color-gray-700);
-  --color-gray-800: var(--color-gray-800);
-  --color-gray-900: var(--color-gray-900);
-  
-  /* Semantic colors */
-  --color-success: var(--color-success);
-  --color-warning: var(--color-warning);
-  --color-error: var(--color-error);
-  --color-info: var(--color-info);
-  
-  /* Border colors */
-  --color-border: var(--color-border);
-  --color-divider: var(--color-divider);
-  
-  /* Typography */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Tailwind CSS v4 theme integration - @theme directive removed for compatibility */
 
 /* Dark mode support (optional - can be enabled later) */
 @media (prefers-color-scheme: dark) {
