@@ -39,7 +39,7 @@ export default function DashboardPage() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
       </div>
     );
   }
@@ -94,7 +94,7 @@ export default function DashboardPage() {
                               const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-8kztSVgh4k2MrA47TAO_XA&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
                               window.open(squareOAuthUrl, '_blank', 'width=600,height=700,scrollbars=yes,resizable=yes');
                             }}
-                            className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                            className="text-primary hover:text-primary/80 font-medium transition-colors"
                           >
                             Connect To Square
                           </button>
@@ -121,7 +121,7 @@ export default function DashboardPage() {
                           const squareOAuthUrl = 'https://squareup.com/oauth2/authorize?client_id=sq0idp-8kztSVgh4k2MrA47TAO_XA&scope=CUSTOMERS_WRITE+CUSTOMERS_READ+PAYMENTS_READ+PAYMENTS_WRITE+SUBSCRIPTIONS_WRITE+SUBSCRIPTIONS_READ+ITEMS_READ+ORDERS_WRITE+INVOICES_WRITE+MERCHANT_PROFILE_READ+INVOICES_READ+PAYMENTS_WRITE_SHARED_ONFILE+ITEMS_WRITE+ORDERS_READ+&session=False#randomizer';
                           window.open(squareOAuthUrl, '_blank', 'width=600,height=700,scrollbars=yes,resizable=yes');
                         }}
-                        className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
+                        className="w-12 h-12 bg-primary hover:bg-primary/90 rounded-full flex items-center justify-center transition-colors"
                       >
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

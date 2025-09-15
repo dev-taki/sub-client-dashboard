@@ -164,7 +164,7 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
           </button>
           <button
             onClick={() => setShowCreateVariation(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-success text-white rounded-lg hover:bg-success/90 transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
           >
             <Plus className="w-4 h-4" />
             Create Variation
@@ -174,9 +174,9 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
 
       {/* Error Message */}
       {subscriptionError && (
-        <div className="flex items-center gap-2 p-4 bg-error/10 border border-error/20 rounded-lg">
-          <AlertCircle className="w-5 h-5 text-error" />
-          <span className="text-error">{subscriptionError}</span>
+        <div className="flex items-center gap-2 p-4 bg-red-50 border border-red-200 rounded-lg">
+          <AlertCircle className="w-5 h-5 text-red-600" />
+          <span className="text-red-800">{subscriptionError}</span>
         </div>
       )}
 
@@ -515,7 +515,7 @@ const SubscriptionPlans: React.FC<SubscriptionPlansProps> = ({ businessId }) => 
                 <button
                   type="submit"
                   disabled={isCreatingVariation}
-                  className="w-full px-4 py-2 bg-success text-white rounded-lg hover:bg-success/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isCreatingVariation ? 'Creating...' : 'Create Variation'}
                 </button>

@@ -9,41 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Primary theme colors
-        primary: {
-          DEFAULT: 'var(--color-primary)',
-          hover: 'var(--color-primary-hover)',
-          light: 'var(--color-primary-light)',
-          dark: 'var(--color-primary-dark)',
-        },
-        
-        // Text and background
+        // Your 3 theme colors only
+        primary: 'var(--color-primary)',
         text: 'var(--color-text)',
         background: 'var(--color-background)',
-        
-        // Gray scale
-        gray: {
-          50: 'var(--color-gray-50)',
-          100: 'var(--color-gray-100)',
-          200: 'var(--color-gray-200)',
-          300: 'var(--color-gray-300)',
-          400: 'var(--color-gray-400)',
-          500: 'var(--color-gray-500)',
-          600: 'var(--color-gray-600)',
-          700: 'var(--color-gray-700)',
-          800: 'var(--color-gray-800)',
-          900: 'var(--color-gray-900)',
-        },
-        
-        // Semantic colors
-        success: 'var(--color-success)',
-        warning: 'var(--color-warning)',
-        error: 'var(--color-error)',
-        info: 'var(--color-info)',
-        
-        // Border colors
-        border: 'var(--color-border)',
-        divider: 'var(--color-divider)',
       },
       
       fontFamily: {

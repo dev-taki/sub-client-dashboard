@@ -1,37 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  /* Primary theme colors */
-  --color-primary: #1ccd63;
-  --color-primary-hover: #16b855;
-  --color-primary-light: #4ddb7a;
-  --color-primary-dark: #0fa54a;
-  
-  /* Text and background colors */
-  --color-text: #000000;
-  --color-background: #ffffff;
-  
-  /* Extended color palette */
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
-  
-  /* Semantic colors */
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
-  --color-info: #3b82f6;
-  
-  /* Border colors */
-  --color-border: #e5e7eb;
-  --color-divider: #d1d5db;
+  /* Your 3 theme colors only */
+  --color-primary: #1ccd63;      /* Button color */
+  --color-text: #000000;         /* Text color - black */
+  --color-background: #ffffff;  /* Background color - white */
   
   /* Legacy variables for compatibility */
   --background: var(--color-background);
@@ -40,25 +13,7 @@
 
 /* Tailwind CSS v4 theme integration - @theme directive removed for compatibility */
 
-/* Dark mode support (optional - can be enabled later) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #0a0a0a;
-    --color-text: #ededed;
-    --color-gray-50: #111827;
-    --color-gray-100: #1f2937;
-    --color-gray-200: #374151;
-    --color-gray-300: #4b5563;
-    --color-gray-400: #6b7280;
-    --color-gray-500: #9ca3af;
-    --color-gray-600: #d1d5db;
-    --color-gray-700: #e5e7eb;
-    --color-gray-800: #f3f4f6;
-    --color-gray-900: #f9fafb;
-    --color-border: #374151;
-    --color-divider: #4b5563;
-  }
-}
+/* Dark mode disabled - keeping your 3 colors only */
 
 body {
   background: var(--color-background);
@@ -66,7 +21,7 @@ body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
 
-/* Utility classes for common theme usage */
+/* Simple utility classes for your 3 colors */
 .btn-primary {
   background-color: var(--color-primary);
   color: white;
@@ -74,15 +29,6 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 0.375rem;
   font-weight: 500;
-  transition: background-color 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-primary-hover);
-}
-
-.btn-primary:active {
-  background-color: var(--color-primary-dark);
 }
 
 .text-primary {
@@ -91,8 +37,4 @@ body {
 
 .bg-primary {
   background-color: var(--color-primary);
-}
-
-.border-primary {
-  border-color: var(--color-primary);
 }

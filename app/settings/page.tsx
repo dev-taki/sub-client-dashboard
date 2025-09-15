@@ -46,7 +46,7 @@ export default function SettingsPage() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
       </div>
     );
   }
@@ -72,7 +72,7 @@ export default function SettingsPage() {
                   <div className="flex-1">
                     {business && business.merchant_id ? (
                       <>
-                        <h2 className="text-xl font-semibold text-green-600 mb-4">
+                        <h2 className="text-xl font-semibold text-primary mb-4">
                           Square Account Connected
                         </h2>
                         <p className="text-gray-600 mb-6">
@@ -82,7 +82,7 @@ export default function SettingsPage() {
                       </>
                     ) : (
                       <>
-                        <h2 className="text-xl font-semibold text-blue-600 mb-4">
+                        <h2 className="text-xl font-semibold text-primary mb-4">
                           Connect to your Square Account
                         </h2>
                         <p className="text-gray-600 mb-6">
@@ -106,7 +106,7 @@ export default function SettingsPage() {
                     ) : (
                       <button
                         onClick={handleSquareConnect}
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                        className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium transition-colors"
                       >
                         Connect
                       </button>
