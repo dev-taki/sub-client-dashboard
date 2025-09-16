@@ -9,7 +9,7 @@ export default function Sidebar() {
   const router = useRouter();
   const pathname = usePathname();
   const dispatch = useAppDispatch();
-  const { user } = useAppSelector((state) => state.auth);
+  const { user, business } = useAppSelector((state) => state.auth);
 
   const handleLogout = async () => {
     try {
@@ -26,11 +26,12 @@ export default function Sidebar() {
       path: '/dashboard', 
       icon: LayoutDashboard
     },
-    { 
+    // Only show Subscriptions menu when business connection exists
+    ...(business ? [{ 
       name: 'Subscriptions', 
       path: '/subscriptions', 
       icon: CreditCard
-    },
+    }] : []),
     { 
       name: 'Settings', 
       path: '/settings', 
